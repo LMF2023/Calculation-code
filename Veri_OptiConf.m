@@ -336,15 +336,7 @@ function [Jaco_base] = JoiAngToJacMatBase(Theta)
 %   输入量为包含7个关节角度的数组，单位为弧度rad；
 %   输出量为使用旋量法以基坐标系为参考的雅可比矩阵
 %% 机械臂关节常量定义
-a0N = 0.7161;
-a1N = 0.430;
-a2N = 0.430;
-a3N = 2.080;
-a4N = 0.387;
-a5N = 2.080;
-a6N = 0.430;
-a7N = 0.430;
-a8N = 0.7161;
+
 %% 关节角度赋值
 % Theta_rad = Theta * pi / 180;
 Theta_rad = Theta;
@@ -412,15 +404,7 @@ function [Tend_end] = xbForKinEnd(Theta)
 Theta_deg = Theta * 180 / pi;
 % Theta_deg = Theta;
 %% 
-a0N = 0.7161;
-a1N = 0.430;
-a2N = 0.430;
-a3N = 2.080;
-a4N = 0.387;
-a5N = 2.080;
-a6N = 0.430;
-a7N = 0.430;
-a8N = 0.7161;
+
 
 theta1 = Theta_deg(1);
 theta2 = Theta_deg(2);
@@ -498,15 +482,7 @@ end
 function [Posi_TDB1, Posi_TDB2, Posi_TDB3, Posi_TDB334, Posi_TDB4, Posi_TDB445, Posi_TDB5, Posi_TDB6, Posi_TDB] = ForKinexb(Theta)
 % 求解机械臂各连杆的端点位置坐标
 
- A0N = 0.7161; 
- A1N = 0.430;
- A2N = 0.430;
- A3N = 2.080;
- A4N = 0.387;
- A5N = 2.080;
- A6N = 0.430;
- A7N = 0.430;
- A8N = 0.7161;
+ 
  
 Theta1=Theta(1);
 Theta2=Theta(2);
